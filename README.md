@@ -20,7 +20,13 @@ first-class design dimension.
 
 ## Install
 
-Copy `SKILL.md` into your Claude Code skills directory:
+Clone directly into your Claude Code skills directory:
+
+```
+git clone https://github.com/Shavy72/auto-polish-skill ~/.claude/skills/auto-polish
+```
+
+Alternatively, just copy `SKILL.md` into the same location:
 
 ```
 ~/.claude/skills/auto-polish/SKILL.md
