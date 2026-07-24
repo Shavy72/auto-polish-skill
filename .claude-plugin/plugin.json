@@ -1,0 +1,12 @@
+{
+  "name": "auto-polish",
+  "description": "Factorial design amplification skill for Claude Code — 5x → 10x → +3x staged UI polish with adversarial design judges",
+  "version": "1.0.0",
+  "author": {
+    "name": "Shavy72"
+  },
+  "homepage": "https://github.com/Shavy72/auto-polish-skill",
+  "repository": "https://github.com/Shavy72/auto-polish-skill",
+  "license": "MIT",
+  "keywords": ["claude-code", "agent-skills", "ui", "design", "polish"]
+}

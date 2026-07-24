@@ -1,7 +1,21 @@
+![auto-polish](assets/banner.png)
+
+[![Install with skills.sh](https://skills.sh/b/Shavy72/auto-polish-skill)](https://skills.sh/Shavy72/auto-polish-skill)
+![License](https://img.shields.io/github/license/Shavy72/auto-polish-skill)
+![Stars](https://img.shields.io/github/stars/Shavy72/auto-polish-skill)
+
 # auto-polish
 
 A [Claude Code](https://claude.com/claude-code) skill that turns the final design polish of any
-UI/frontend build into a **fixed, multi-agent amplification pipeline**:
+UI/frontend build into a **fixed, multi-agent amplification pipeline**.
+
+## Quickstart
+
+```
+npx skills add Shavy72/auto-polish-skill
+```
+
+## How it works
 
 ```
 Stage 5x (Maximalist) → Judge 1 (Critic + copy audit + resource inventory + external
@@ -18,9 +32,28 @@ then 10x, then calculate one more 3x jump" produced dramatically better UI than 
 polish pass — and where a missed button-label critique taught the skill that copy is a
 first-class design dimension.
 
-## Install
+## Installation
 
-Clone directly into your Claude Code skills directory:
+### Option 1 — skills CLI
+
+```
+npx skills add Shavy72/auto-polish-skill
+```
+
+Global install (available in every project):
+
+```
+npx skills add -g Shavy72/auto-polish-skill
+```
+
+### Option 2 — Claude Code plugin
+
+```
+/plugin marketplace add Shavy72/auto-polish-skill
+/plugin install auto-polish@auto-polish-skill
+```
+
+### Option 3 — manual
 
 ```
 git clone https://github.com/Shavy72/auto-polish-skill ~/.claude/skills/auto-polish
@@ -56,3 +89,7 @@ To make it fire automatically, add a one-liner to your auto-active skills list i
 - **Done means done** — no half stages; proof (build, screenshots, video) or it didn't happen.
 
 This file is meant to be fine-tuned continuously in use. PRs and forks welcome.
+
+## License
+
+MIT — see [LICENSE](LICENSE).

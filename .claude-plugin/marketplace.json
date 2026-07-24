@@ -1,0 +1,19 @@
+{
+  "name": "auto-polish-skill",
+  "owner": {
+    "name": "Shavy72"
+  },
+  "metadata": {
+    "description": "Factorial design amplification skill: 5x → 10x → +3x staged UI polish with adversarial design judges",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "auto-polish",
+      "source": "./",
+      "description": "Factorial design amplification skill for Claude Code — 5x → 10x → +3x staged UI polish with adversarial design judges",
+      "version": "1.0.0",
+      "strict": true
+    }
+  ]
+}
