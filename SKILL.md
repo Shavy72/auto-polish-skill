@@ -13,8 +13,22 @@ look at it, then 10x better in every conceivable way, look again, then calculate
 
 - **Automatically** as the LAST phase once a new UI feature, page/component, redesign or app is
   functionally complete and build-green — the user must NOT have to ask.
-- **On demand** (`/auto-polish <target>`) for mini-addons (<~30 changed lines), bugfixes, copy tweaks.
+- **On demand** (`/auto-polish [area]`) for mini-addons (<~30 changed lines), bugfixes, copy tweaks.
 - No skipping for cost reasons without asking — "always" was an explicit user decision.
+
+### Invocation (`/auto-polish [area]`) — the argument is OPTIONAL
+
+**Without an argument** the skill starts dynamically: target = the most recently built/changed
+UI of the session (session context, else `git diff`/recent commits on UI files). No UI target
+determinable → one short question instead of guessing.
+
+**With an argument** it names an APP AREA in user language (e.g. `Leaderboard`, `Shift plan`,
+`Task wizard`) — not a file path. Flow:
+1. **Resolve:** area → target file(s) via grep (route/sidebar label/component name);
+   ambiguous or >3 candidates → a read-only explore agent, NEVER guess.
+2. Briefly state the resolved files + 1-line scope (only ask back if the match is ambiguous,
+   otherwise start right away).
+3. Launch the dynamic workflow with those files as the FILE parameter (schema below).
 
 ## Flow: Workflow tool with exactly 5 phases — each with its OWN focus (fixed, no open end)
 
