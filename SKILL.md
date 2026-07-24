@@ -106,6 +106,22 @@ The result (concrete names + purpose) is passed to builders/judges as an "AVAILA
 block; every agent MUST include a line `RESOURCES USED: <name → for what>` in its output
 (this feeds the report below).
 
+### Skill inclusion is MANDATORY READING in EVERY agent prompt (not just inventory!)
+
+Learned the hard way in production: design skills must NOT merely be listed, or "distilled"
+into the prompts by the orchestrator — the agents read them THEMSELVES. Concretely: the main
+session writes a block into every builder/judge prompt:
+`MANDATORY READING (Read before working, apply the checklists, quote the applied rules in
+your output): <absolute SKILL.md paths>` — tailored per role (example mapping, adapt
+dynamically to the user's installed skills):
+- **Maximalist:** construction skills (e.g. layout/craft/motion-foundation skills)
+- **Critic:** audit skills (e.g. layout diagnosis, anti-slop tell catalogs as checklists)
+- **Amplifier:** motion/interaction skills
+- **Minimalist:** reduction skills (anti-slop, minimalism)
+- **Finisher:** polish skills (responsive polish, interface feel)
+Max 2–3 files per agent (focus beats volume). An agent whose output quotes no applied
+skill rules has NOT passed its gate.
+
 ## Polish report (mandatory output at the end, always)
 
 The main session closes EVERY run with a compact audit report (in the final answer, or as a
