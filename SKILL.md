@@ -84,8 +84,10 @@ Executors/judges always with an explicit strong model (never inherit the orchest
   design findings.
 - **Resource inventory (MANDATORY, basis for calculating the next jump):** which installed
   design skills and connected MCPs are relevant for THIS target and NOT yet exhausted?
-  For each unused resource: state concretely what it would contribute — derive the next
-  amplification jump from that.
+  **Listing is NOT enough** (learned in the first production run): actually Read the 2–3 most
+  relevant SKILL.md files and apply their checklists/detectors to the target (e.g. anti-slop
+  tells as an audit list, layout-diagnosis heuristics); concrete excerpts + findings go into
+  the feedback for the next builder as quotes — derive the amplification jump from that.
 - Judge 2 additionally: "What has become excessive/kitsch and must be rolled back?"
 - Judges evaluate screenshots/videos first (vision), code second.
 
