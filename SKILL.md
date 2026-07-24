@@ -122,6 +122,26 @@ dynamically to the user's installed skills):
 Max 2–3 files per agent (focus beats volume). An agent whose output quotes no applied
 skill rules has NOT passed its gate.
 
+### Built-in design baseline (distilled from the best design skills — ALWAYS applies, even without them)
+
+This catalog goes verbatim into every agent prompt; the user's own skills stack on top:
+- **Layout:** 8pt grid (4px only as half-step) · no dead areas — whitespace is a decision,
+  not a leftover · alignment consistency · touch targets ≥44px · line length 45–75 chars.
+- **Type:** hierarchy via size AND weight AND color (never size alone) · titles concise
+  (≤6 words) · body calm (rgba white ~.6–.75 on dark) · tabular-nums for numbers.
+- **Light/depth:** ONE light source per surface · light tells the material story (specular
+  edge on top, shadow below, accent color as a light source, not a fill) · glow soup = slop.
+- **Motion:** transform/opacity only · spring/ease curves, never linear · movement needs
+  semantics (the object's real mechanics), entrances once instead of endless loops ·
+  UI 150–450 ms, ambient 4–8 s · full prefers-reduced-motion with sensible end states.
+- **Anti-slop:** no emojis as icons · no stock Tailwind shadows/template gradients ·
+  no radius mixing · max one dominant accent color · rest state is still · nothing that
+  reads as a "generated hero template".
+- **Feel:** hover = light on (not color swap) · active = scale ~.97 · visible focus ·
+  design the empty/loading/error states too.
+- **Copy:** CTA = verb + concrete benefit · every word earns its place · microcopy talks
+  to the user, not about the feature.
+
 ## Polish report (mandatory output at the end, always)
 
 The main session closes EVERY run with a compact audit report (in the final answer, or as a
