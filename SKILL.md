@@ -141,6 +141,24 @@ This catalog goes verbatim into every agent prompt; the user's own skills stack 
   design the empty/loading/error states too.
 - **Copy:** CTA = verb + concrete benefit · every word earns its place · microcopy talks
   to the user, not about the feature.
+- **Reference world (Stage 5x picks it BEFORE building, one sentence in the prompt):**
+  abstract adjectives ("premium", "modern") produce slop — name a concrete real-world
+  reference class (AAA skill tree/quest map, blueprint/construction plan, watch complication,
+  hi-fi faceplate …) and translate it into the PROJECT's material language; never copy the
+  foreign style verbatim. (Field-proven: a "video game skill tree + blueprint grid" directive
+  was the quality leap where "more glass/glow" was not.)
+- **Iconography:** thin outline glyphs in circles = cheap. A premium icon is a multi-layer
+  material body (gradient fill, light from above, dark depth edge, specular highlight; shared
+  SVG defs instead of per-instance filters) · every motif must tell the CONCRETE content —
+  check the icon map against the real titles/data and replace filler motifs (abstract circle,
+  decorative gear) · emboss numbers/variants into the motif instead of sticking on a badge ·
+  quality benchmark: the project's best existing asset, compared side-by-side via screenshot.
+- **Stage/canvas physics:** watermark typography must fit ENTIRELY inside its element box
+  (mask/text-stroke clip at the box → hard cut edges; line-height 1, widen the box) ·
+  drag surfaces: user-select none + dragstart prevention + pointer cleanup
+  (pointercancel/blur) · free scrolling snaps to semantic anchors on release — the focused
+  section centers and FILLS the viewport, neighbors only peeking in; content vertically
+  centered, no dead half-field below the chain.
 
 ## Polish report (mandatory output at the end, always)
 
