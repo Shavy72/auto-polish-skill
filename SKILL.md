@@ -91,6 +91,33 @@ Executors/judges always with an explicit strong model (never inherit the orchest
 - Judge 2 additionally: "What has become excessive/kitsch and must be rolled back?"
 - Judges evaluate screenshots/videos first (vision), code second.
 
+## Dynamic resource discovery (before launching the workflow, main session)
+
+This skill is portable — every user has different skills/MCPs/plugins installed. So BEFORE
+starting, detect what actually exists and inject it into the agent prompts (hardcode nothing;
+every name in this document is only an example):
+1. **Skills:** list installed skills (session skill list or `ls ~/.claude/skills`) and filter
+   the design-relevant ones.
+2. **MCPs/tools:** check connected MCPs (session tools / `claude mcp list`) — especially:
+   what can THIS user render/inspect designs with (real-browser MCP, Playwright, DevTools MCP)?
+   What can analyze video? Which component/font/design MCPs exist?
+3. **External CLIs:** second-opinion models (e.g. codex) available?
+The result (concrete names + purpose) is passed to builders/judges as an "AVAILABLE RESOURCES"
+block; every agent MUST include a line `RESOURCES USED: <name → for what>` in its output
+(this feeds the report below).
+
+## Polish report (mandatory output at the end, always)
+
+The main session closes EVERY run with a compact audit report (in the final answer, or as a
+file if space is tight):
+
+| Phase | Role | Roughly did | Skills/MCPs/CLIs used |
+|---|---|---|---|
+
+Plus: judge scores (before/after), the Minimalist's cut list (what is deliberately NOT in),
+proof list (build/screenshots/video/live), and relevant resources that went unused with a
+one-sentence reason. The report makes every run traceable and fine-tunable for the user.
+
 ## Wrap-up (main session, not the workflow)
 
 1. The workflow NEVER commits/pushes — the main session inspects the final screenshots
