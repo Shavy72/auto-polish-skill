@@ -4,15 +4,15 @@
     "name": "Shavy72"
   },
   "metadata": {
-    "description": "Factorial design amplification skill: 5x → 10x → +3x staged UI polish with adversarial design judges",
-    "version": "1.0.0"
+    "description": "Full-arsenal design amplification: scans every installed design skill/MCP/CLI, builds parallel variants, merges the winners across 5x → 10x → +3x",
+    "version": "2.0.0"
   },
   "plugins": [
     {
       "name": "auto-polish",
       "source": "./",
-      "description": "Factorial design amplification skill for Claude Code — 5x → 10x → +3x staged UI polish with adversarial design judges",
-      "version": "1.0.0",
+      "description": "Full-arsenal design amplification for Claude Code — arsenal picker, parallel variants, judge and tutor merge across 5x → 10x → +3x",
+      "version": "2.0.0",
       "strict": true
     }
   ]

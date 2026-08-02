@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0] - 2026-08-02
+
+Full arsenal orchestration — the skill now uses your whole installed design toolchain instead of whatever Claude happens to reach for.
+
+- **Arsenal scan** (`scripts/scan-arsenal.mjs`): dependency-free Node scan of skills, MCP servers, plugins and PATH CLIs; frontmatter-only, mtime-cached, classified into eight design categories
+- **Arsenal picker** (`scripts/picker.mjs`): local page with one card per tool ("specialised in …"), everything pre-selected, opt-out instead of opt-in, `needs you in the loop` flags, improvement-brief field, DE/EN UI; three return channels (local endpoint, copy token, JSON download)
+- **Parallel worlds instead of one build**: selected tools are cut into 3–6 bundles, each builds a real runnable variant in its own worktree — every selected tool lands in exactly one bundle
+- **Structured merge**: judge panel plus external AI tutors (Codex, Gemini, with images) pick the structurally strongest base, remaining strengths are grafted in via a transplant table with explicit adopt/reject reasons
+- **Improvement gate** per stage: change quota plus a blind before/after league verdict; one retry, otherwise the shortfall is declared in the report
+- **Design baseline** extracted into `reference/design-basis.md` as mandatory reading for every agent
+
 ## [1.1.0] - 2026-07-25
 
 Field-proven additions to the built-in design baseline (from a production polish run):
